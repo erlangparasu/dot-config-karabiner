@@ -363,10 +363,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "s"
+                                            "key_code": "f"
                                         },
                                         {
-                                            "key_code": "d"
+                                            "key_code": "2"
                                         }
                                     ]
                                 },
@@ -389,10 +389,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "w"
+                                            "key_code": "f"
                                         },
                                         {
-                                            "key_code": "e"
+                                            "key_code": "3"
                                         }
                                     ]
                                 },
@@ -420,10 +420,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "s"
+                                            "key_code": "f"
                                         },
                                         {
-                                            "key_code": "f"
+                                            "key_code": "s"
                                         }
                                     ]
                                 },
@@ -533,10 +533,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "d"
+                                            "key_code": "f"
                                         },
                                         {
-                                            "key_code": "f"
+                                            "key_code": "d"
                                         }
                                     ]
                                 },
@@ -584,10 +584,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "e"
+                                            "key_code": "f"
                                         },
                                         {
-                                            "key_code": "f"
+                                            "key_code": "e"
                                         }
                                     ]
                                 },
@@ -624,7 +624,7 @@
                         ]
                     },
                     {
-                        "description": "New Rule (numbers toggle)",
+                        "description": "New Rule (custom numbers)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -857,20 +857,20 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "name": "my_layer",
+                                        "type": "variable_unless",
+                                        "value": 1
+                                    }
+                                ],
                                 "from": {
+                                    "key_code": "1",
                                     "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "mandatory": [
+                                            "left_control"
                                         ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "c"
-                                        },
-                                        {
-                                            "key_code": "v"
-                                        }
-                                    ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -883,20 +883,20 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "name": "my_layer",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
                                 "from": {
+                                    "key_code": "1",
                                     "modifiers": {
-                                        "optional": [
-                                            "any"
+                                        "mandatory": [
+                                            "left_control"
                                         ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "x"
-                                        },
-                                        {
-                                            "key_code": "c"
-                                        }
-                                    ]
+                                    }
                                 },
                                 "to": [
                                     {
