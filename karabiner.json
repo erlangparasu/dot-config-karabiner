@@ -865,10 +865,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "c"
+                                            "key_code": "comma"
                                         },
                                         {
-                                            "key_code": "v"
+                                            "key_code": "period"
                                         }
                                     ]
                                 },
