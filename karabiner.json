@@ -584,7 +584,7 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "e"
+                                            "key_code": "w"
                                         },
                                         {
                                             "key_code": "f"
@@ -610,13 +610,13 @@
                                             "key_code": "j"
                                         },
                                         {
-                                            "key_code": "i"
+                                            "key_code": "o"
                                         }
                                     ]
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_control"
+                                        "key_code": "right_control"
                                     }
                                 ],
                                 "type": "basic"
