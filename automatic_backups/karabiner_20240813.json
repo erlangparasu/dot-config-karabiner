@@ -159,8 +159,8 @@
                                 "from": {
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
-                                        { "key_code": "i" },
-                                        { "key_code": "o" }
+                                        { "key_code": "comma" },
+                                        { "key_code": "period" }
                                     ]
                                 },
                                 "to": [
