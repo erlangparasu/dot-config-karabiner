@@ -10,6 +10,49 @@
                 },
                 "rules": [
                     {
+                        "description": "New Rule (backslash simultan)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["any"] },
+                                    "simultaneous": [
+                                        { "key_code": "e" },
+                                        { "key_code": "f" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "backslash" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "New Rule (bracket simultan)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["any"] },
+                                    "simultaneous": [
+                                        { "key_code": "i" },
+                                        { "key_code": "j" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "open_bracket" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["any"] },
+                                    "simultaneous": [
+                                        { "key_code": "k" },
+                                        { "key_code": "m" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "close_bracket" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "New Rule (cmd simultan)",
                         "manipulators": [
                             {
@@ -255,33 +298,11 @@
                                 "from": {
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
-                                        { "key_code": "e" },
-                                        { "key_code": "f" }
-                                    ]
-                                },
-                                "to": [{ "key_code": "left_shift" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": { "optional": ["any"] },
-                                    "simultaneous": [
                                         { "key_code": "d" },
                                         { "key_code": "f" }
                                     ]
                                 },
                                 "to": [{ "key_code": "left_shift" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": { "optional": ["any"] },
-                                    "simultaneous": [
-                                        { "key_code": "j" },
-                                        { "key_code": "i" }
-                                    ]
-                                },
-                                "to": [{ "key_code": "right_shift" }],
                                 "type": "basic"
                             },
                             {
