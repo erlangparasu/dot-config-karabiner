@@ -17,7 +17,7 @@
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
                                         { "key_code": "e" },
-                                        { "key_code": "r" }
+                                        { "key_code": "f" }
                                     ]
                                 },
                                 "to": [{ "key_code": "backslash" }],
