@@ -91,7 +91,7 @@
                                 "from": {
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
-                                        { "key_code": "d" },
+                                        { "key_code": "f" },
                                         { "key_code": "spacebar" }
                                     ]
                                 },
@@ -102,7 +102,7 @@
                                 "from": {
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
-                                        { "key_code": "k" },
+                                        { "key_code": "j" },
                                         { "key_code": "spacebar" }
                                     ]
                                 },
@@ -210,6 +210,30 @@
                                 "from": {
                                     "modifiers": { "optional": ["any"] },
                                     "simultaneous": [
+                                        { "key_code": "s" },
+                                        { "key_code": "d" }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "arrow_state",
+                                            "value": false
+                                        }
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "my_number",
+                                            "value": false
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "modifiers": { "optional": ["any"] },
+                                    "simultaneous": [
                                         { "key_code": "i" },
                                         { "key_code": "o" }
                                     ]
@@ -220,27 +244,7 @@
                                             "name": "arrow_state",
                                             "value": true
                                         }
-                                    },
-                                    { "shell_command": "osascript -e 'display notification \"hjkl arrows: ON\"' " }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": { "optional": ["any"] },
-                                    "simultaneous": [
-                                        { "key_code": "u" },
-                                        { "key_code": "i" }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "arrow_state",
-                                            "value": false
-                                        }
-                                    },
-                                    { "shell_command": "osascript -e 'display notification \"hjkl arrows: OFF\"' " }
+                                    }
                                 ],
                                 "type": "basic"
                             }
@@ -291,6 +295,16 @@
                     {
                         "description": "New Rule (esc)",
                         "manipulators": [
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        { "key_code": "e" },
+                                        { "key_code": "r" }
+                                    ]
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            },
                             {
                                 "from": {
                                     "key_code": "caps_lock",
@@ -610,27 +624,7 @@
                                             "name": "my_number",
                                             "value": true
                                         }
-                                    },
-                                    { "shell_command": "osascript -e 'display notification \"numbers row: ON\"' " }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": { "optional": ["any"] },
-                                    "simultaneous": [
-                                        { "key_code": "s" },
-                                        { "key_code": "d" }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "my_number",
-                                            "value": false
-                                        }
-                                    },
-                                    { "shell_command": "osascript -e 'display notification \"numbers row: OFF\"' " }
+                                    }
                                 ],
                                 "type": "basic"
                             }
