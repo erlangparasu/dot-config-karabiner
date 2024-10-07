@@ -11,7 +11,6 @@
                 "rules": [
                     {
                         "description": "New Rule (symbols via hyperkey)",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -69,7 +68,6 @@
                     },
                     {
                         "description": "New Rule (numbers simultan)",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
